@@ -2,5 +2,6 @@ absl-py
 easydict
 cython
 numpy
-tensorflow-gpu
+Pillow
+tensorflow
 tqdm
