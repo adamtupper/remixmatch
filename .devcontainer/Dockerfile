@@ -34,9 +34,11 @@ RUN sudo apt-get install -y git
 # Install virtualenv
 RUN pip3 install virtualenv
 
-# Install CUDA
+# Install CUDA 10.0
 RUN wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu1804/x86_64/cuda-repo-ubuntu1804_10.0.130-1_amd64.deb
 RUN sudo dpkg -i cuda-repo-ubuntu1804_10.0.130-1_amd64.deb
-RUN sudo apt-key adv --fetch-keys https://developer.download.nvidia.com/compute/cuda/repos/ubuntu1804/x86_64/7fa2af80.pub
+RUN sudo apt-key adv --fetch-keys https://developer.download.nvidia.com/compute/cuda/repos/ubuntu1804/x86_64/3bf863cc.pub
 RUN sudo apt-get update
 RUN sudo apt-get install -y cuda-libraries-10-0
+
+# Install cuDNN 7.4 from https://developer.nvidia.com/rdp/cudnn-archive
