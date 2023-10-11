@@ -22,10 +22,10 @@ USER $USERNAME
 # Create workspace directory
 RUN mkdir -p /home/$USERNAME/workspace/
 
-# Install Python 3.10 and non-Python dependencies
+# Install Python 3.7 and non-Python dependencies
 RUN sudo apt-get install -y software-properties-common net-tools
 RUN sudo add-apt-repository ppa:deadsnakes/ppa
-RUN sudo apt-get install -y python3.10 python3.10-venv python3.10-dev python3.10-distutils binfmt-support python3-pip
+RUN sudo apt-get install -y python3.7 python3.7-venv python3.7-dev python3.7-distutils binfmt-support python3-pip
 RUN sudo apt-get install -y git
 
 # Install virtualenv
