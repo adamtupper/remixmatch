@@ -3,5 +3,5 @@ easydict
 cython
 numpy
 Pillow
-tensorflow
+tensorflow-gpu==1.14.0
 tqdm
