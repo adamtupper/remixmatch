@@ -3,5 +3,6 @@ easydict
 cython
 numpy
 Pillow
+protobuf==3.20
 tensorflow-gpu==1.14.0
 tqdm
