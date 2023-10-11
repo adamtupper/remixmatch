@@ -4,7 +4,7 @@
 cd ..
 
 # Setup virtual environment
-virtualenv env -p python3.10
+virtualenv env -p python3.7
 source env/bin/activate
 pip install --upgrade pip
 
